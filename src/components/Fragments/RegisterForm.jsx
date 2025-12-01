@@ -47,16 +47,16 @@ const RegisterForm = () => {
         navigate("/login");
       }, 5000);
     } catch (error) {
-      toast.error(error.response?.data?.message || "Gagal mendafatar!");
+      toast.error(error.response?.data?.message || "Gagal mendaftar!");
       setLoading(false);
     }
   };
 
-  const nameRef = useRef()
+  const nameRef = useRef();
 
   useEffect(() => {
-    nameRef.current.focus()
-  }, [])
+    nameRef.current.focus();
+  }, []);
 
   return (
     <div
